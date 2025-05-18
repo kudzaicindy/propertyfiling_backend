@@ -1,13 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
   experimental: {
-    appDir: false
+    serverActions: true
   },
-  env: {
-    NODE_ENV: 'production'
-  }
+  output: 'standalone'
 }
 
 module.exports = nextConfig
