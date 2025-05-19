@@ -2,9 +2,14 @@
 const nextConfig = {
   reactStrictMode: true,
   experimental: {
-    serverActions: true
+    serverActions: {
+      allowedOrigins: ['*']
+    }
   },
-  output: 'standalone'
+  output: 'standalone',
+  env: {
+    NODE_ENV: 'production'
+  }
 }
 
 module.exports = nextConfig
