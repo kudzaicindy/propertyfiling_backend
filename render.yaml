@@ -2,9 +2,9 @@ services:
   - type: web
     name: propertyfiling-backend
     env: node
-    buildCommand: npm install && npm run build
+    buildCommand: npm install --legacy-peer-deps && npm run build
     startCommand: npm start
-    nodeVersion: 18
+    nodeVersion: 18.17.0
     envVars:
       - key: NODE_ENV
         value: production
