@@ -7,6 +7,11 @@ const nextConfig = {
     }
   },
   output: 'standalone',
+  // Disable static optimization for API routes
+  staticPageGenerationTimeout: 120,
+  // Configure page extensions
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx'],
+  // Configure headers
   async headers() {
     return [
       {
