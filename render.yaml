@@ -2,15 +2,11 @@ services:
   - type: web
     name: propertyfiling-backend
     env: node
-    buildCommand: npm install --legacy-peer-deps && npm run build
+    buildCommand: npm install && npm run build
     startCommand: npm start
-    nodeVersion: 18.17.0
+    nodeVersion: 18
     envVars:
       - key: NODE_ENV
         value: production
       - key: PORT
         value: 3000
-      - key: MONGODB_URI
-        sync: false
-      - key: JWT_SECRET
-        sync: false

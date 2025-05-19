@@ -26,6 +26,15 @@ const nextConfig = {
       },
     ];
   },
+  // Configure dynamic routes
+  async rewrites() {
+    return [
+      {
+        source: '/api/:path*',
+        destination: '/api/:path*',
+      },
+    ];
+  },
 };
 
 export default nextConfig;
