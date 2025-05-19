@@ -6,10 +6,7 @@ const nextConfig = {
       allowedOrigins: ['*']
     }
   },
-  output: 'standalone',
-  env: {
-    NODE_ENV: 'production'
-  }
+  output: 'standalone'
 }
 
 module.exports = nextConfig
